@@ -12,6 +12,7 @@
 * Created Tauri application
 * Selected React and TypeScript
 * Successfully launched starter application
+* Added Animated Progress Bar
 
 ### Next
 
