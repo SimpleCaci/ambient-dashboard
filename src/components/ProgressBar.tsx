@@ -18,8 +18,8 @@ function ProgressBar({
           style={{
             width: `${safeProgress}%`,
             '--accent': color,
-          }}
-        />
+          } as React.CSSProperties}
+        /> 
       </div>
     </div>
   );

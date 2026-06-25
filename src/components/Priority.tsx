@@ -1,5 +1,7 @@
+import React from 'react';
+
 import './Priority.css';
-import ProgressBar from './ProgressBar.jsx';
+import ProgressBar from './ProgressBar';
 
 function Priority({
   progress = 80,
