@@ -25,3 +25,8 @@
 ## Day 2
 
 ### Completed
+* Added Priority Componets
+
+
+### Next
+* Fix Styling for Each Individual Componet

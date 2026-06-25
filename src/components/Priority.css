@@ -1,38 +1,29 @@
-.priority-card {
-  width: 280px;
-  padding: 18px;
-  border-radius: 20px;
-  background: rgba(15, 23, 42, 0.85);
-  border: 1px solid rgba(125, 211, 252, 0.25);
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
-  color: white;
-}
-
-.priority-top {
+.priority-bottom {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 14px;
+  margin-top: 12px;
 }
 
-.priority-label {
+.priority-bottom p {
   margin: 0;
-  font-size: 0.75rem;
-  color: #94a3b8;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
+  font-family: monospace;
+  font-size: 0.9rem;
 }
 
-.priority-name {
-  margin: 4px 0 0;
+.priority-bottom button {
+  width: 32px;
+  height: 32px;
+  border: 2px solid #7dd3fc;
+  background: #0f172a;
+  color: white;
+  font-family: monospace;
   font-size: 1.1rem;
-  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 3px 3px 0 #020617;
 }
 
-.priority-percent {
-  padding: 6px 10px;
-  border-radius: 999px;
-  background: rgba(125, 211, 252, 0.15);
-  color: #7dd3fc;
-  font-weight: 700;
+.priority-bottom button:hover {
+  transform: translate(1px, 1px);
+  box-shadow: 2px 2px 0 #020617;
 }

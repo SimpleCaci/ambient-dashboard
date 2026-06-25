@@ -24,8 +24,8 @@ function App() {
       <div className="card">
         <h2>Priorities</h2>
 
-        <Priority progress={65} color="#7dd3fc" name="Water Intake" />
-        <Priority progress={100} color="#7dfc98" name="Food Intake" /> 
+        <Priority name="Water Intake" color="#7dd3fc" start={2} max={3} step={1} unit="glasses" />
+        <Priority name="Food Intake" color="#7dfc98" start={1} max={3} step={1} unit="servings" />
       </div>
 
       <div className="card">
