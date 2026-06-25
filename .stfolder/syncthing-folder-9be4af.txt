@@ -1,0 +1,5 @@
+# This directory is a Syncthing folder marker.
+# Do not delete.
+
+folderID: gvmr3-cskry
+created: 2026-06-24T11:44:07-07:00

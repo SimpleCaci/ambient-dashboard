@@ -19,4 +19,9 @@
 * Remove starter screen
 * Build dashboard layout
 * Add live clock
-* Push first GitHub commit
+* Link up Discord/Whatsapp for Remote Entries
+
+
+## Day 2
+
+### Completed
