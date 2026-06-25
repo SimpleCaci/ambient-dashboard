@@ -1,3 +1,35 @@
+.dashboard {
+  position: relative;
+  background: #111;
+  color: #f2f2f2;
+}
+
+.dashboard {
+    filter:
+        saturate(0)
+        contrast(1.2)
+        brightness(.95);
+}
+
+.retro-filter::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+
+    opacity: .05;
+
+    background-image:
+      radial-gradient(white 1px, transparent 1px);
+
+    background-size: 3px 3px;
+
+    animation: noise .2s steps(4) infinite;
+}
+
+@keyframes noise {
+    from { transform: translate(0,0); }
+    to   { transform: translate(-2px,2px); }
+}
 .logo.vite:hover {
   filter: drop-shadow(0 0 2em #747bff);
 }
@@ -6,7 +38,7 @@
   filter: drop-shadow(0 0 2em #61dafb);
 }
 :root {
-  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+  font-family: "Press Start 2P", monospace;
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;

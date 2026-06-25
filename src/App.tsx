@@ -6,6 +6,7 @@ import Priority from './components/Priority';
 function App() {
   return (
     <div className="dashboard">
+      <div className="retro-filter">
       <div className="card">
         <h2>Clock</h2>
         <p>12:23 PM</p>
@@ -26,11 +27,13 @@ function App() {
 
         <Priority name="Water Intake" color="#7dd3fc" start={2} max={3} step={1} unit="glasses" />
         <Priority name="Food Intake" color="#7dfc98" start={1} max={3} step={1} unit="servings" />
+        <Priority name="Exercise" color="#fc7d7d" start={0} max={5} step={1} unit="sessions" />
       </div>
 
       <div className="card">
         <h2>Focus</h2>
         <p>Building Ambient Dashboard atm</p>
+      </div>
       </div>
     </div>
   );
