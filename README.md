@@ -4,14 +4,19 @@ A calm, retro-styled desktop dashboard for seeing daily priorities at a glance.
 
 Ambient Dashboard is a React interface packaged with Tauri. The current prototype combines quick status cards with interactive progress controls for water, food, exercise, and other daily priorities.
 
-> **Status:** active prototype. The interface and reusable priority components work in source, but clock, weather, calendar, persistence, and production packaging are not complete.
+> **Status:** active prototype. The responsive dashboard, local priorities, clock, theme palettes, and focus workflow are implemented. Weather, calendar integration, automated tests, and production packaging remain future work.
 
-![Current dashboard progress](docs/screenshots/5-addition-decreation-buttons.png)
+![Earlier dashboard development snapshot](docs/screenshots/5-addition-decreation-buttons.png)
+
+The screenshot documents an earlier milestone; the current interface has evolved into the responsive ambient workspace described below.
 
 ## Current capabilities
 
 - retro ambient dashboard layout
-- reusable priority/progress components
+- reusable priority/progress components with local persistence
+- 25-minute focus and 5-minute break timer
+- on-device recent-session history and daily completion count
+- switchable night-bloom and forest color palettes
 - configurable starting values, maximums, steps, units, and colors
 - increment and decrement controls
 - Tauri desktop shell
@@ -30,8 +35,9 @@ Ambient Dashboard is a React interface packaged with Tauri. The current prototyp
 ```text
 React dashboard
   -> status cards
+  -> FocusTimer + local session history
   -> reusable Priority components
-  -> local component state
+  -> local theme and progress state
           |
           v
      Tauri desktop shell
@@ -75,24 +81,22 @@ npm run tauri build
 
 ## Validation status
 
-No automated tests or CI workflow currently exist. The available package scripts cover TypeScript and Vite builds, but they have not yet been verified in this audit.
+No automated component tests or CI workflow currently exist. `npm run build` performs the current TypeScript and Vite production check.
 
 ## Current limitations
 
-- clock, weather, and calendar values are placeholders
-- priority state resets when the app restarts
-- buttons need explicit accessible labels and keyboard review
+- weather and calendar integrations are intentionally unconnected
+- timer completion has no sound or operating-system notification yet
+- keyboard and screen-reader behavior still needs a full manual review
 - the application still uses default Vite/Tauri title and icon references in places
 - native packaging has not been documented or verified
 - no privacy model exists yet for future calendar/weather integrations
 
 ## High-value next steps
 
-- persist priorities locally without requiring an account
-- add a real clock and configurable focus timer
-- replace starter branding and metadata
+- add optional timer durations and desktop notifications
+- replace remaining starter icon assets
 - add keyboard-accessible controls and empty/error states
-- offer an intentional low-distraction ambient mode
 - add component tests and desktop build CI
 
 ## Project history
