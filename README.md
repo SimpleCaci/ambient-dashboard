@@ -4,7 +4,7 @@ A calm, retro-styled desktop dashboard for seeing daily priorities at a glance.
 
 Ambient Dashboard is a React interface packaged with Tauri. The current prototype combines quick status cards with interactive progress controls for water, food, exercise, and other daily priorities.
 
-> **Status:** active prototype. The responsive dashboard, local priorities, clock, theme palettes, and focus workflow are implemented. Weather, calendar integration, automated tests, and production packaging remain future work.
+> **Status:** active prototype with a responsive dashboard, local priorities, a focus timer, theme palettes, and on-device session history.
 
 ![Earlier dashboard development snapshot](docs/screenshots/5-addition-decreation-buttons.png)
 
@@ -79,9 +79,9 @@ npm run build
 npm run tauri build
 ```
 
-## Validation status
+## Build check
 
-No automated component tests or CI workflow currently exist. `npm run build` performs the current TypeScript and Vite production check.
+Run `npm run build` to perform the TypeScript and Vite production check.
 
 ## Current limitations
 
@@ -89,8 +89,6 @@ No automated component tests or CI workflow currently exist. `npm run build` per
 - timer completion has no sound or operating-system notification yet
 - keyboard and screen-reader behavior still needs a full manual review
 - the application still uses default Vite/Tauri title and icon references in places
-- native packaging has not been documented or verified
-- no privacy model exists yet for future calendar/weather integrations
 
 ## High-value next steps
 
