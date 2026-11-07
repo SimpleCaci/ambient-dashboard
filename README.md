@@ -6,9 +6,18 @@ Ambient Dashboard is a React interface packaged with Tauri. The current prototyp
 
 > **Status:** active prototype with a responsive dashboard, local priorities, a focus timer, theme palettes, and on-device session history.
 
-![Earlier dashboard development snapshot](docs/screenshots/5-addition-decreation-buttons.png)
+![Current Night bloom dashboard with focus timer and saved priorities](docs/screenshots/focus-room-night.jpg)
 
-The screenshot documents an earlier milestone; the current interface has evolved into the responsive ambient workspace described below.
+[Run in a browser](#run) · [Desktop setup](#setup) · [Contribute](CONTRIBUTING.md)
+
+<details>
+<summary>Forest signal palette</summary>
+
+![Current Forest signal palette](docs/screenshots/focus-room-forest.jpg)
+
+</details>
+
+Captured from the current browser build with the default sample priorities. Weather and calendar cards are placeholders; no accounts are connected.
 
 ## Current capabilities
 
@@ -47,15 +56,10 @@ The frontend is under `src/`; the native desktop wrapper and permissions are und
 
 ## Setup
 
-Required:
-
-- Node.js
-- npm
-- Rust toolchain
-- platform-specific Tauri prerequisites
+For the browser app, use Node.js 22.12+ and npm. The native desktop build additionally requires the Rust toolchain and [Tauri platform prerequisites](https://v2.tauri.app/start/prerequisites/).
 
 ```bash
-npm install
+npm ci
 ```
 
 ## Run
@@ -81,14 +85,14 @@ npm run tauri build
 
 ## Build check
 
-Run `npm run build` to perform the TypeScript and Vite production check.
+Run `npm run build` to perform the TypeScript and Vite production check. [GitHub Actions](https://github.com/SimpleCaci/ambient-dashboard/actions/workflows/validate.yml) runs the same frontend check. A passing frontend check does not verify native installers.
 
 ## Current limitations
 
 - weather and calendar integrations are intentionally unconnected
 - timer completion has no sound or operating-system notification yet
 - keyboard and screen-reader behavior still needs a full manual review
-- the application still uses default Vite/Tauri title and icon references in places
+- the native shell still uses the Tauri starter window title and icon assets
 
 ## High-value next steps
 
